@@ -1,10 +1,10 @@
 import pygame
 import requests
-from pygame import mixer
+
 pygame.init()
 response = requests.get("https://sugoku.herokuapp.com/board?difficulty=easy")
 grid = response.json()['board']
-print(grid)
+
 grid_original = [[grid[x][y] for y in range(len(grid[0]))] for x in range(len(grid))]
 original_grid_element_colour = (52, 31, 151)
 background_colour = (245, 245, 220)
