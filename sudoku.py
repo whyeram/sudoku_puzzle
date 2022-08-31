@@ -93,8 +93,6 @@ def is_correct(board):
 
 def main():
 
-	#initialising pygame
-	pygame.init()
 
 	#Window title
 	pygame.display.set_caption("Sudoku")
